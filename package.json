@@ -8,12 +8,13 @@
     "build": "webpack",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "keywords": [
     "webpack"
   ],
-  "author": "muthaiyan mani",
+  "author": "muthaiyan.mb@zohocorp.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.6",
@@ -22,6 +23,7 @@
     "babel-loader": "^8.2.5",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
@@ -29,12 +31,5 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
-  "dependencies": {
-    "husky": "^8.0.1"
-  },
-  "husky":{
-    "hooks":{
-      "pre-commit": "eslint --ignore-path .eslintignore --ext .js,.ts ."
-    }
-  }
+  "dependencies": {}
 }
