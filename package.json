@@ -34,7 +34,7 @@
   },
   "husky":{
     "hooks":{
-      "pre-commit": "echo \"[Husky] pre-commit\""
+      "pre-commit": "eslint --ignore-path .eslintignore --ext .js,.ts ."
     }
   }
 }
